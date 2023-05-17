@@ -1,5 +1,5 @@
 pipeline {
-   agent any
+  agent any
   stages {    
     
     stage('Checkout external proj') {
@@ -28,8 +28,8 @@ pipeline {
         }
     }
 
-        stage('Hello') {
-            steps {
+    stage('Hello') {
+         steps {
                 echo 'Hello World New'
            
         
