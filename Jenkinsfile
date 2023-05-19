@@ -1,5 +1,6 @@
 pipeline {
-  agent any
+    agent any
+  stages {    
     
     stage('Checkout external proj') {
         steps {
@@ -11,14 +12,11 @@ pipeline {
         }
     }
   
-    stage('Build') {
-        steps {
-                echo 'Hello World Newpipeline' 
-                ls -lrt
-                pwd
-                sh 'python3 operations.py'
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
         }
     }
-
 }
 
