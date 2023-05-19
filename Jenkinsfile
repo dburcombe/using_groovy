@@ -14,9 +14,6 @@ pipeline {
   
         stage('Hello') {
             steps {
-                echo 'Hello World',
-                ls -lrt,
-                pwd,
                 sh 'python3 operations.py'
             }
         }
